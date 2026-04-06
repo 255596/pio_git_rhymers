@@ -6,8 +6,11 @@ public class DefaultCountingOutRhymer {
     public static final int MAXIVAL = 11;
     private final int[] NUMBERS = new int[12];
 
-    public int total = -1;
+    private int total = -1;
 
+    public int getTotal() {
+        return total;
+    }
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
